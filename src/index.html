@@ -6,33 +6,31 @@
 		<title>Some Title</title>
 
 		<!-- Font -->
-		<link
+		<!-- <link
 			rel="preload"
 			href="./assets/fonts/fontName.woff2"
 			as="font"
 			type="font/woff2"
 			crossorigin
-		/>
+		/> -->
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="./favicon.jpg" />
 
 		<!-- Styles -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="./assets/css/main.css" />
 	</head>
 	<body>
 		<div class="app">
-			@include('./assets/components/overlay/overlay.html')
-			@include('./assets/components/header/header.html')
-			<main class="main container">
-				<!-- Sections -->
-
-				<!-- Sections -->
-			</main>
-			@include('./assets/components/footer/footer.html')
+			@include('./assets/components/app-nav/app-nav.html')
+			@include('./assets/components/home/home.html')
 		</div>
-
 		<!-- Scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>

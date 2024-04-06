@@ -1,0 +1,44 @@
+.social {
+	display: grid;
+	place-items: center;
+
+	width: 50px;
+	aspect-ratio: 1;
+
+	background: url('../img/svg/social-rect.svg') no-repeat center/cover;
+
+	@include hover {
+		.fb,
+		.ln,
+		.tw,
+		.pn {
+			fill: #0866ff;
+		}
+	}
+
+	&__icon {
+		display: block;
+		fill: white;
+		transition: fill 150ms ease-in-out;
+	}
+}
+
+.fb {
+	width: 12px;
+	height: 22px;
+}
+
+.ln {
+	width: 20px;
+	height: 20px;
+}
+
+.pn {
+	width: 18px;
+	height: 22px;
+}
+
+.tw {
+	width: 23px;
+	height: 18px;
+}
