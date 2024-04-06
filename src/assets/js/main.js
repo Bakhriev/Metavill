@@ -9,6 +9,14 @@ const navigations = document.querySelectorAll('.nav-btn');
 
 navigations.forEach((navBtn, index) => {
 	navBtn.addEventListener('click', () => {
+		removeActiveNav();
 		swiper.slideTo(index);
+		navBtn.classList.add('active');
 	});
 });
+
+navigations[0].classList.add('active');
+
+const removeActiveNav = () => {
+	navigations.forEach(n => n.classList.remove('active'));
+};
