@@ -19,5 +19,10 @@
 @import '../components/btn/btn';
 @import '../components/app-nav/app-nav';
 @import '../components/home/home';
+@import '../components/whitepaper/whitepaper';
 
 @import '../components/footer/footer';
+
+.swiper {
+	height: 100vh;
+}

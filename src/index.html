@@ -27,7 +27,16 @@
 	<body>
 		<div class="app">
 			@include('./assets/components/app-nav/app-nav.html')
-			@include('./assets/components/home/home.html')
+			<div class="swiper app__carousel">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						@include('./assets/components/home/home.html')
+					</div>
+					<div class="swiper-slide">
+						@include('./assets/components/whitepaper/whitepaper.html')
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- Scripts -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>

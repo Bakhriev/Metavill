@@ -22,6 +22,16 @@
 			font-size: 20px;
 		}
 	}
+	&:focus {
+		.nav-btn__page-name {
+			opacity: 1;
+		}
+		.nav-btn__page {
+			color: #33fcff;
+			font-weight: 700;
+			font-size: 20px;
+		}
+	}
 	&.active {
 		.nav-btn__page {
 			color: #33fcff;
