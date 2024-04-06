@@ -5,6 +5,9 @@ const swiper = new Swiper('.app__carousel', {
 	slidesPerView: 1,
 	mousewheel: true,
 	speed: 2000,
+
+	allowTouchMove: false,
+
 	on: {
 		activeIndexChange: () => {
 			removeActiveNav();
