@@ -22,7 +22,7 @@
 			font-size: 20px;
 		}
 	}
-	&:focus {
+	&:focus-visible {
 		.nav-btn__page-name {
 			opacity: 1;
 		}

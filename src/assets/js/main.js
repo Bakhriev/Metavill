@@ -1,11 +1,17 @@
+const navigations = document.querySelectorAll('.nav-btn');
+
 const swiper = new Swiper('.app__carousel', {
 	direction: 'vertical',
 	slidesPerView: 1,
 	mousewheel: true,
 	speed: 2000,
+	on: {
+		activeIndexChange: () => {
+			removeActiveNav();
+			navigations[swiper.realIndex].classList.add('active');
+		},
+	},
 });
-
-const navigations = document.querySelectorAll('.nav-btn');
 
 navigations.forEach((navBtn, index) => {
 	navBtn.addEventListener('click', () => {
